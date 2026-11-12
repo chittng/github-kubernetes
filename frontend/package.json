@@ -1,0 +1,13 @@
+{
+  "name": "gki-frontend",
+  "version": "1.0.0",
+  "description": "Frontend cho bài giữa kỳ CKA 2026",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
