@@ -1,0 +1,4 @@
+# Script chạy trên Linux phải dùng xuống dòng kiểu LF
+*.sh text eol=lf
+*.yaml text eol=lf
+Dockerfile text eol=lf
