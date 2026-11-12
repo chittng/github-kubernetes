@@ -33,3 +33,6 @@ const server = http.createServer(async (req, res) => {
 server.listen(8080, () => {
   console.log('Frontend đang chạy ở cổng 8080, backend: ' + BACKEND_URL);
 });
+
+// Khi Docker/Kubernetes yêu cầu tắt container (tín hiệu SIGTERM) thì thoát ngay
+process.on('SIGTERM', () => process.exit(0));

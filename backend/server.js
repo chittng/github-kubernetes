@@ -27,3 +27,6 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Backend đang chạy ở cổng 3000');
 });
+
+// Khi Docker/Kubernetes yêu cầu tắt container (tín hiệu SIGTERM) thì thoát ngay
+process.on('SIGTERM', () => process.exit(0));
